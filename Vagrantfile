@@ -161,7 +161,7 @@ Vagrant.configure(2) do |config|
     chef.add_recipe 'php::package'
     chef.add_recipe 'wpcli'
     chef.add_recipe 'wpcli::install'
-    chef.add_recipe 'vccw'
+    # chef.add_recipe 'vccw'
 
   end
 
