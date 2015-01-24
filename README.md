@@ -15,15 +15,14 @@ This is a Vagrant configuration designed for theme reviewing.
 * [WordPress-Coding-Standards](https://github.com/WordPress-Coding-Standards/WordPress-Coding-Standards)
 * [WP-CLI](http://wp-cli.org/)
 * WordPress Plugins
-    * dynamic-hostname
-    * theme-check
-    * debogger
-    * log-deprecated-notices
-    * monster-widget
-    * wordpress-beta-tester
-    * regenerate-thumbnails
-    * debug-bar
-    * dynamic-hostname
+    * [theme-check](https://wordpress.org/plugins/theme-check/)
+    * [debogger](https://wordpress.org/plugins/debogger/)
+    * [log-deprecated-notices](https://wordpress.org/plugins/log-deprecated-notices/)
+    * [monster-widget](https://wordpress.org/plugins/monster-widget/)
+    * [wordpress-beta-tester](https://wordpress.org/plugins/wordpress-beta-tester/)
+    * [regenerate-thumbnails](https://wordpress.org/plugins/regenerate-thumbnails/)
+    * [debug-bar](https://wordpress.org/plugins/debug-bar/)
+    * [dynamic-hostname](https://wordpress.org/plugins/dynamic-hostname/)
 
 ### WordPress settings
 
