@@ -4,7 +4,7 @@ This is a Vagrant configuration designed for theme reviewing.
 
 ## Getting started
 
-1. Download .zip from [here](https://github.com/vccw-team/vccw-theme-review/releases).
+1. Download .zip from [here](https://github.com/vccw-team/vccw-for-theme-review/releases).
 1. Change directory into `vccw-for-theme-review-xxx`.
 1. Put the .zip url of the theme to `site.yml`.
 1. Run `vagrant up`.
