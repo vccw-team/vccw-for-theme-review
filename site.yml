@@ -9,7 +9,6 @@ lang: en_US
 title: This is the long blog name for the theme review
 
 plugins:
-  - dynamic-hostname
   - theme-check
   - debogger
   - log-deprecated-notices
