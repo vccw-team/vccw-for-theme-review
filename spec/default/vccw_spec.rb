@@ -49,15 +49,15 @@ describe command('~/.composer/vendor/bin/phpcs --version') do
   its(:exit_status) { should eq 0 }
 end
 
-describe file('/vagrant/Movefile') do
-  let(:disable_sudo) { true }
-  it { should be_file }
-end
+# describe file('/vagrant/Movefile') do
+#   let(:disable_sudo) { true }
+#   it { should be_file }
+# end
 
-describe command('wordmove help') do
-  let(:disable_sudo) { true }
-  its(:exit_status) { should eq 0 }
-end
+# describe command('wordmove help') do
+#   let(:disable_sudo) { true }
+#   its(:exit_status) { should eq 0 }
+# end
 
 # describe command('wpcs --version') do
 #   let(:disable_sudo) { true }
