@@ -10,6 +10,39 @@ This is a Vagrant configuration designed for theme reviewing.
 1. Run `vagrant up`.
 1. Visit [http://wp-theme.dev/](http://wp-theme.dev/).
 
+## What's installed
+
+* [WordPress-Coding-Standards](https://github.com/WordPress-Coding-Standards/WordPress-Coding-Standards)
+* [WP-CLI](http://wp-cli.org/)
+* WordPress Plugins
+    * [theme-check](https://wordpress.org/plugins/theme-check/)
+    * [debogger](https://wordpress.org/plugins/debogger/)
+    * [log-deprecated-notices](https://wordpress.org/plugins/log-deprecated-notices/)
+    * [monster-widget](https://wordpress.org/plugins/monster-widget/)
+    * [wordpress-beta-tester](https://wordpress.org/plugins/wordpress-beta-tester/)
+    * [regenerate-thumbnails](https://wordpress.org/plugins/regenerate-thumbnails/)
+    * [debug-bar](https://wordpress.org/plugins/debug-bar/)
+    * [dynamic-hostname](https://wordpress.org/plugins/dynamic-hostname/)
+
+### WordPress settings
+
+| Option                | Value                                                                        |
+| --------------------- | ---------------------------------------------------------------------------- |
+| blogname              | This is the long blog name for the theme review                              |
+| blogdescription       | This is a very very long tagline to reviewed in theme review proccess. Yeah! |
+| comments_per_page     | 5                                                                            |
+| large_size_h          | ""                                                                           |
+| large_size_w          | ""                                                                           |
+| page_comments         | 1                                                                            |
+| permalink_structure   | /archives/%post_id%                                                          |
+| posts_per_page        | 5                                                                            |
+| thread_comments       | 1                                                                            |
+| thread_comments_depth | 3                                                                            |
+
+### Config file
+
+See `site.yml`.
+
 ```
 # encoding: utf-8
 # vim: ft=ruby expandtab shiftwidth=2 tabstop=2
@@ -22,7 +55,6 @@ lang: en_US
 title: This is the long blog name for the theme review
 
 plugins:
-  - dynamic-hostname
   - theme-check
   - debogger
   - log-deprecated-notices
