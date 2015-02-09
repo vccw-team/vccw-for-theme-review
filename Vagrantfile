@@ -42,7 +42,7 @@ Vagrant.configure(2) do |config|
   config.vm.network :private_network, ip: _conf['ip']
 
   config.vm.synced_folder ".", "/vagrant", :mount_options => ['dmode=755', 'fmode=644']
-  config.vm.synced_folder "www/wordpress/", _conf['document_root'], :create => "true", :mount_options => ['dmode=755', 'fmode=644']
+  config.vm.synced_folder _conf['sync_folder'], _conf['document_root'], :create => "true", :mount_options => ['dmode=755', 'fmode=644']
 
   if Vagrant.has_plugin?('vagrant-hostsupdater')
     config.hostsupdater.remove_on_suspend = true
@@ -161,7 +161,6 @@ Vagrant.configure(2) do |config|
     chef.add_recipe 'php::package'
     chef.add_recipe 'wpcli'
     chef.add_recipe 'wpcli::install'
-    # chef.add_recipe 'vccw'
 
   end
 
