@@ -33,8 +33,8 @@ options:
   thread_comments_depth: "3"
   page_comments: "1"
   comments_per_page: "5"
-  large_size_w: ""
-  large_size_h: ""
+  large_size_w: "0"
+  large_size_h: "0"
 
 wp_debug: true
 savequeries: true
