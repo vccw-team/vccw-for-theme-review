@@ -12,6 +12,16 @@ _conf = YAML.load(
   ).read
 )
 
+if File.exists?(File.join(ENV["HOME"], '.vccw/config.yml'))
+  _custom = YAML.load(
+    File.open(
+      File.join(ENV["HOME"], '.vccw/config.yml'),
+      File::RDONLY
+    ).read
+  )
+  _conf.merge!(_custom) if _custom.is_a?(Hash)
+end
+
 if File.exists?('site.yml')
   _site = YAML.load(
     File.open(
@@ -61,9 +71,9 @@ describe command("wp --no-color theme status " + Shellwords.shellescape(_conf['t
 end
 
 _conf['options'].each do |key, value|
-  describe command("wp option get " + Shellwords.shellescape(key)) do
+  describe command("wp option get " + Shellwords.shellescape(key.to_s)) do
     let(:disable_sudo) { true }
     its(:exit_status) { should eq 0 }
-    its(:stdout){ should eq value + "\n" }
+    its(:stdout){ should eq value.to_s + "\n" }
   end
 end
